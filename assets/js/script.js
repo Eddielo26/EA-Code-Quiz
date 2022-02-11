@@ -10,8 +10,8 @@ var answer4 = document.getElementById("answer4");
 var timerCountdown = document.getElementById("countdown");
 var countdownMessage = document.getElementById("timer");
 var timeLeft = 75;
-var highScores = document.getElementById("high-scores");
-var finalScores = 0;
+var highScore = document.getElementById("high-scores");
+var finalScore = 0;
 
 // questions for the quiz
 var questions = [
@@ -54,5 +54,55 @@ function timer() {
             highScores();
             return;
         }
-    }
+    },
+    1000);
 }
+
+function displayQuestion() {
+    document.querySelector("#start-button").style.display="none";
+    document.querySelector("#answer-buttons").style.display="block";
+    var questionResult = quizQuestions[questionIndex].question;
+    var answerOptions = quizQuestions[questionIndex].options;
+    questionSection.textContent = questionResult;
+    answerOptions = [answer1, answer2, answer3, answer4];
+    answer1.textContent = (quizQuestions[questionIndex].choices[0]);
+    answer2.textContent = (quizQuestions[questionIndex].choices[1]);
+    answer3.textContent = (quizQuestions[questionIndex].choices[2]);
+    answer4.textContent = (quizQuestions[questionIndex].choices[3]);
+
+ // add eventlistener to each listed item
+ var clickingAnswers = document.querySelectorAll("button")
+        for (i = 0; i < clickingAnswers.length; i++) {
+            clickingAnswers[i].addEventListener("click", checkAnswers);
+        }
+        if (questionIndex >= 4){
+            return
+        };
+}
+
+function checkAnswers(event) {
+    event.preventDefault()
+    var rightAnswer = event.target.textContent;
+    var answerMessage = document.createElement ("p");
+    answerButtons.append(answerMessage);
+    {
+        if (rightAnswer === quizQuestions[questionIndex].correctAnswer) {
+            answerMessage.textContent = "Correct!";}
+
+        else {
+            answerMessage.textContent = "Incorrect!";
+            timeLeft = timeLeft - 10;
+        }
+        
+        if (questionIndex >= 4) {
+            return;
+        }
+
+        else { 
+            questionIndex++;
+            displayQuestion();
+        }
+        }
+    }
+
+    document.querySelector("#startButton").addEventListener("click", timer);
