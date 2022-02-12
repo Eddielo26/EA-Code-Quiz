@@ -1,16 +1,16 @@
 // set variables
-var startButton = document.getElementById('start-Btn');
-var questionSection = document.getElementById("questions");
-var quizSection = document.getElementById("quiz-section");
-var answerButtons = document.getElementById("answer-buttons");
-var answer1 = document.getElementById("answer1");
-var answer2 = document.getElementById("answer2");
-var answer3 = document.getElementById("answer3");
-var answer4 = document.getElementById("answer4");
-var timerCountdown = document.getElementById("countdown");
-var countdownMessage = document.getElementById("timer");
+var startButton = document.querySelector('#start-Btn');
+var questionSection = document.querySelector(".questions");
+var quizSection = document.querySelector(".quiz-section");
+var answerButtons = document.querySelector("#answer-buttons");
+var answer1 = document.querySelector("#answer1");
+var answer2 = document.querySelector("#answer2");
+var answer3 = document.querySelector("#answer3");
+var answer4 = document.querySelector("#answer4");
+var timerCountdown = document.querySelector("#countdown");
+var countdownMessage = document.querySelector(#"timer");
 var timeLeft = 75;
-var highScore = document.getElementById("high-scores");
+var highScore = document.querySelector("high-scores");
 var finalScore = 0;
 
 // questions for the quiz
