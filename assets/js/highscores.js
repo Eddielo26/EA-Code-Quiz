@@ -10,6 +10,7 @@ if(!(localStorage.getItem("initials") === null)) {
     initialsObj = JSON.parse(localStorage.getItem("intials"));
     scoreObj = JSON.parse(localStorage.getItem("score"));
 
+    // creating information given by the user
     for (var i = 0; i < initialsObj.length; i++) {
         var scoreEl = document.createElement("p");
         scoreEl.setAttribute("class","scores");
