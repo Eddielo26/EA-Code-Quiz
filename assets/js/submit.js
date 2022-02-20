@@ -4,7 +4,7 @@ var nameInputEl = document.querySelector(".form")
 
 var queryString = document.location.search;
 var score = queryString.split("=")[1];
-scoreTimer.textContent = "Score: " + score;
+timer.textContent = "Score: " + score;
 var initialsObj = [];
 var scoreObj = [];
 
@@ -12,7 +12,7 @@ var scoreObj = [];
 
 userFormEl.addEventListener("sumit", function(event) {
     event.preventDefault();
-    var initials = nameInputEl.ariaValueMax.trim();
+    var initials = nameInputEl.value.trim();
     
     if(!(localStorage.getItem("initials") === null)){
         initialsObj = JSON.parse(localStorage.getItem("initials"));

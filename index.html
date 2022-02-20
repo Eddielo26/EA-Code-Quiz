@@ -13,39 +13,44 @@
 </head>
 
 <header>
-    <section class="intro">
-    <h1>Coding Quiz Challenge</h1>
+    <section class="header">
+        <section class="high-score">
+            <a href="highscores.html" >View High Scores</a>
+        </section>
     <div id="countdown">
         <p id="timer">Timer</p>
     </div>
-    </section>
-    <section class="quiz-section">
-        <div class="questions">
-            <p>Try to answer the following code related questions within the time limit.
-                <br>Keep in mind that incorrect answers will penalize your score time by ten seconds!
-            </p>
-           
-        </div>
-        
-        </section>
-        <section>
 
-        <div id="answer-buttons" class="btn-grid">
-            <button class="btn">answer1</button>
-            <button class="btn">answer2</button>
+    <section class="intro">
+        <h1>Coding Quiz Challenge</h1>
+        <p>Try to answer the following code related questions within the time limit.
+            <br>Keep in mind that incorrect answers will penalize your score time by ten seconds!
+        </p>
+   
+
+    <button id="start-Btn" class="btn">Start Quiz!</button>
+
+    </section>
+
+    <section class="quiz-section">
+    <section class="questions"></section>
+        <ol class="answer-buttons btn-grid">
+            <!-- <section><button class="answer-buttons">answer1</button></section> -->
+            <!-- <button class="btn">answer2</button>
             <button class="btn">answer3</button>
-            <button class="btn">answer4</button>
-            <p id="wrong"></p>   
-        </div>
-        <button id= "start-Btn" class="btn">Start Quiz!</button>
-        <div id="high-scores" class="high-scores"></div>
-       
+            <button class="btn">answer4</button> -->
+            <p id="wrong"></p>
+        </ol>
+        </section>
+
+    <!-- <div id="high-scores" class="high-scores"></div> -->
+
     </section>
 
 
 </header>
 
-<body>
+
     <script src="assets/js/script.js"></script>
 
 </html>
