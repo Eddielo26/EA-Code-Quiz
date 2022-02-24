@@ -113,6 +113,15 @@ function displayQuestion() {
                 answerButtons.append(wrongAlert);
                 timeLeft = timeLeft-10;
             }
+
+            else {
+                wrong.remove();
+                var wrongAlert = document.createElement("p");
+                wrongAlert.id = "wrong";
+                wrongAlert.textContent = "Wrong!";
+                answerButtons.append(wrongAlert);
+                timeLeft = timeLeft-10;
+            }
         }
     });
 

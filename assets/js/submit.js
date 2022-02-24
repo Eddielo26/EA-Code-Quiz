@@ -1,5 +1,5 @@
-var timer = document.querySelector(".timer");
-var userFormEl = document.querySelector("highscore");
+var timer = document.querySelector(".clock");
+var userFormEl = document.querySelector(".highscores");
 var nameInputEl = document.querySelector(".form")
 
 var queryString = document.location.search;
@@ -10,7 +10,7 @@ var scoreObj = [];
 
 
 
-userFormEl.addEventListener("sumit", function(event) {
+userFormEl.addEventListener("submit", function(event) {
     event.preventDefault();
     var initials = nameInputEl.value.trim();
     

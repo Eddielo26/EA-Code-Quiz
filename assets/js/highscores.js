@@ -7,7 +7,7 @@ var scoreObj = [];
 // retrieving information from local storage
 if(!(localStorage.getItem("initials") === null)) {
     // using json parse to change from a string to an object
-    initialsObj = JSON.parse(localStorage.getItem("intials"));
+    initialsObj = JSON.parse(localStorage.getItem("initials"));
     scoreObj = JSON.parse(localStorage.getItem("score"));
 
     // creating information given by the user
