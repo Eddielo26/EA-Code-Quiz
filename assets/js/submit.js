@@ -17,7 +17,7 @@ userFormEl.addEventListener("submit", function (event) {
     initialsObj.push(initials);
     scoreObj.push(score);
   } else {
-    initialsObj.push(typeof initialsObj);
+    initialsObj.push(initials);
     scoreObj.push(score);
   }
   // save player scores to local storage and transfers player to highscore screen
