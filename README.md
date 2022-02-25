@@ -48,3 +48,5 @@
 
 # Contact
 <a href="https://github.com/Eddielo26">Github: Eddielo26</a>
+
+[Return to top](#ea-code-quiz)
