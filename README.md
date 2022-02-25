@@ -9,8 +9,9 @@
 * [Description](#description)
 * [Screenshots](#screenshots)
 * [Usage](#usage)
-* [Contact](#contact)
 * [Deployed Link](#deployed-link)
+* [Contact](#contact)
+
 
 
 
