@@ -10,7 +10,7 @@ var scoreObj = [];
 userFormEl.addEventListener("submit", function (event) {
   event.preventDefault();
   var initials = nameInputEl.value.trim();
-
+  // use when local storage needs to show previous player scores
   if (!(localStorage.getItem("initials") === null)) {
     initialsObj = JSON.parse(localStorage.getItem("initials"));
     scoreObj = JSON.parse(localStorage.getItem("score"));
@@ -20,7 +20,7 @@ userFormEl.addEventListener("submit", function (event) {
     initialsObj.push(typeof initialsObj);
     scoreObj.push(score);
   }
-
+  // save player scores to local storage and transfers player to highscore screen
   localStorage.setItem("initials", JSON.stringify(initialsObj));
   localStorage.setItem("score", JSON.stringify(scoreObj));
   location.href = "highscores.html";

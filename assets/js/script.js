@@ -109,7 +109,7 @@ startButton.addEventListener("click", function () {
             displayQuestion();
         } else {
             var wrong = document.querySelector("#wrong");
-
+            // if wrong player is deducted 10 seconds from countdown timer/score
             if (wrong === null) {
                 var wrongAlert = document.createElement("p");
                 wrongAlert.id = "wrong";
